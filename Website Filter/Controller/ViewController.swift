@@ -280,7 +280,7 @@ final class ViewController: UIViewController {
         let alert = UIAlertController(
             title: "Add new website filter",
             message: """
-            Addff words to ignore when opening website links
+            Add words to ignore when opening website links
             
             (Hint: At least 2 characters, no spaces)
             """,
