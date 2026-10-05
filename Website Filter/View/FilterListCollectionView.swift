@@ -60,22 +60,15 @@ extension FilterListCollectionView: UICollectionViewDelegate {
 
 extension FilterListCollectionView: UICollectionViewDataSource {
     
-    func numberOfSections(
-        in collectionView: UICollectionView
-    ) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         model.count
     }
     
-    func collectionView(
-        _ collectionView: UICollectionView,
-        numberOfItemsInSection section: Int) -> Int {
-            1
-        }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        1
+    }
     
-    func collectionView(
-        _ collectionView: UICollectionView,
-        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             guard let cell = collectionView.dequeueReusableCell(
                 withReuseIdentifier: "FilterListCell",
                 for: indexPath) as? UICollectionViewListCell else {
